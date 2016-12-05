@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import "reset";
+@import "common";
+.dt_head {
+  height: 40px;
+  line-height: 40px;
+  @extend %posr;
+  .back {
+    @extend %posa;
+    left: 10px;
+    top: 0;
+  }
+  h1{
+    @extend %center;
+    font-size:16px;
+  }
+}
+
+.dt_content {
+  @extend %flex;
+  background: url("../img/dt1.png") no-repeat;
+  background-size: 100% 100%;
+  .dt_box {
+    width: 86%;
+    margin: 0 auto;
+    margin-top:38px;
+    h3{
+      font-size: 14px;
+      margin:15px 0 0 10px;
+      span{
+        display: inline-block;
+        width:8px;
+        height:8px;
+        background: url("../img/dt2.png")no-repeat;
+        background-size: 100%;
+        margin-right:5px;
+      }
+    }
+    p{
+      font-size: 0;
+      margin-top: 5px;
+      span{
+        font-size: 14px;
+        display: inline-block;
+        width:44px;
+        height:20px;
+        @extend %center;
+        line-height:20px;
+        border: 1px solid #666666;
+        margin-left:10px;
+        border-radius: 2px;
+      }
+    }
+  }
+  .dt_bg{
+    color:#fff;
+    background: #F6514B;
+    border-color: transparent!important;
+  }
+  .dt_btn{
+    @include btn(410px);
+  }
+}

@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import "reset";
+@import "common";
+.x_head{
+  height:40px;
+  line-height:40px;
+  @extend %posr;
+  .back{
+    @extend %posa;
+    left:10px;
+    top:0;
+  }
+  h1{
+    @extend %center;
+    font-size:16px;
+  }
+}
+.x_content{
+  @extend %flex;
+  background: url("../img/b1.png")no-repeat;
+  background-size: 100% 100%;
+  @extend %posr;
+}
+.x_selectbox{
+  width:68.75%;
+  margin:83px auto;
+  h2{
+    color: $fontcolor;
+    @extend %center;
+  }
+  .x_aa{
+    width:100%;
+    margin:0 auto;
+    margin-top:36px;
+    font-size:0;
+    li{
+      display: inline-block;
+      width:50%;
+    }
+    .x_boy{
+      .x_border{
+        display: inline-block;
+        width:100%;
+        border-right:1px solid #000000;
+      }
+      img{
+        width:58px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .x_girl{
+      img{
+        width:58px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .x_info{
+      font-size: 12px;
+      margin-top:20px;
+      @extend %center;
+    }
+
+  }
+.bg{
+  background: #F6514B;
+}
+  .x_select{
+    display:block;
+    width:20px;
+    height:20px;
+    border: 1px solid #ccc;
+    border-radius:10px;
+    margin:10px auto;
+  }
+
+}
+.x_btn{
+  @include btn(310px);
+}

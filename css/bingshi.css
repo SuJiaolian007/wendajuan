@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS reset */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  font-family: 'Microsoft Yahei'; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+abbr, acronym {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+/* 解决兼容而加的样式 */
+a, img {
+  -webkit-touch-callout: none;
+  /*禁止长按链接与图片弹出菜单*/ }
+
+html, body {
+  -webkit-user-select: none;
+  /*禁止选中文本*/
+  user-select: none; }
+
+button, input, optgroup, select, textarea {
+  -webkit-appearance: none;
+  /*去掉webkit默认的表单样式*/ }
+
+a, button, input, optgroup, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+  /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/ }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.bs_content {
+  -webkit-flex: 1; }
+
+.bs_head .back, .bs_content .bs_btn {
+  position: absolute; }
+
+.bs_head {
+  position: relative; }
+
+.bs_head h1, .bs_content .bs_box h2, .bs_content .bs_box .bs_bb .sp, .bs_content .bs_list span, .bs_content .bs_btn {
+  text-align: center; }
+
+.show {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.bs_head {
+  height: 40px;
+  line-height: 40px; }
+  .bs_head .back {
+    left: 10px;
+    top: 0; }
+  .bs_head h1 {
+    font-size: 16px; }
+
+.bs_content {
+  background: url("../img/b1.png") no-repeat;
+  background-size: 100% 100%; }
+  .bs_content .bs_box {
+    width: 68.75%;
+    margin: 0 auto;
+    margin-top: 83px; }
+    .bs_content .bs_box h2 {
+      color: #B00600; }
+    .bs_content .bs_box .bs_bb {
+      font-size: 0;
+      margin-top: 20px; }
+      .bs_content .bs_box .bs_bb .sp {
+        display: inline-block;
+        width: 50%;
+        height: 20px;
+        font-size: 18px; }
+      .bs_content .bs_box .bs_bb i {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        border: 1px solid #000; }
+      .bs_content .bs_box .bs_bb b {
+        font-weight: normal;
+        margin-left: 10px; }
+  .bs_content .bs_list {
+    width: 222px;
+    padding: 5px;
+    height: 103px;
+    border: 1px solid #9D864E;
+    margin: 18px 0 0 59px;
+    background: #FEF5C7; }
+    .bs_content .bs_list span {
+      display: inline-block;
+      width: 60px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      border: 1px solid #000;
+      border-radius: 2px;
+      margin: 5px; }
+  .bs_content .bs_btn {
+    left: 50%;
+    top: 330px;
+    width: 108px;
+    height: 40px;
+    margin-left: -54px;
+    line-height: 40px;
+    color: #B00600;
+    font-size: 19px;
+    font-weight: bolder;
+    background: url("../img/a2.png") no-repeat;
+    background-size: 100%; }
+  .bs_content .bs_bg {
+    color: #fff;
+    background: #F6514B;
+    border-color: transparent !important; }
+
+/*# sourceMappingURL=bingshi.css.map */

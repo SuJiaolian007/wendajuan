@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* CSS reset */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  font-family: 'Microsoft Yahei'; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+abbr, acronym {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+/* 解决兼容而加的样式 */
+a, img {
+  -webkit-touch-callout: none;
+  /*禁止长按链接与图片弹出菜单*/ }
+
+html, body {
+  -webkit-user-select: none;
+  /*禁止选中文本*/
+  user-select: none; }
+
+button, input, optgroup, select, textarea {
+  -webkit-appearance: none;
+  /*去掉webkit默认的表单样式*/ }
+
+a, button, input, optgroup, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+  /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/ }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.x_content {
+  -webkit-flex: 1; }
+
+.x_head .back, .x_btn {
+  position: absolute; }
+
+.x_head, .x_content {
+  position: relative; }
+
+.x_head h1, .x_selectbox h2, .x_selectbox .x_aa .x_info, .x_btn {
+  text-align: center; }
+
+.show {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.x_head {
+  height: 40px;
+  line-height: 40px; }
+  .x_head .back {
+    left: 10px;
+    top: 0; }
+  .x_head h1 {
+    font-size: 16px; }
+
+.x_content {
+  background: url("../img/b1.png") no-repeat;
+  background-size: 100% 100%; }
+
+.x_selectbox {
+  width: 68.75%;
+  margin: 83px auto; }
+  .x_selectbox h2 {
+    color: #B00600; }
+  .x_selectbox .x_aa {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 36px;
+    font-size: 0; }
+    .x_selectbox .x_aa li {
+      display: inline-block;
+      width: 50%; }
+    .x_selectbox .x_aa .x_boy .x_border {
+      display: inline-block;
+      width: 100%;
+      border-right: 1px solid #000000; }
+    .x_selectbox .x_aa .x_boy img {
+      width: 58px;
+      display: block;
+      margin: 0 auto; }
+    .x_selectbox .x_aa .x_girl img {
+      width: 58px;
+      display: block;
+      margin: 0 auto; }
+    .x_selectbox .x_aa .x_info {
+      font-size: 12px;
+      margin-top: 20px; }
+  .x_selectbox .bg {
+    background: red; }
+  .x_selectbox .x_select {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px auto; }
+
+.x_btn {
+  left: 50%;
+  top: 310px;
+  width: 108px;
+  height: 40px;
+  margin-left: -54px;
+  line-height: 40px;
+  color: #B00600;
+  font-size: 19px;
+  font-weight: bolder;
+  background: url("../img/a2.png") no-repeat;
+  background-size: 100%; }
+
+/*# sourceMappingURL=sex.css.map */

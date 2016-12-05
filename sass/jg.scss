@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import "reset";
+@import "common";
+.jg_head{
+  height:40px;
+  line-height:40px;
+  h1{
+    @extend %center;
+    font-size:16px;
+  }
+}
+.jg_content{
+  .jg_top{
+    color: #fff;
+    height:120px;
+    background: #F6514B;
+    padding:20px 88px 0 21px;
+    font-size: 12px;
+    @extend %posr;
+    h3{
+      font-size:16px;
+      line-height:30px;
+    }
+    .jg_more{
+      @extend %posa;
+      right:20px;
+      top:50%;
+      width:20px;
+      height:20px;
+      margin-top:-10px;
+      font-size: 20px;
+    }
+  }
+  .jg_list{
+    margin-top:15px;
+    li{
+      padding-left:19px;
+      height:42px;
+      line-height:42px;
+      color:#F6514B;
+      border-top: 1px solid #EEEEEE;
+      &:last-of-type{
+        border-bottom: 1px solid #EEEEEE;
+      }
+    }
+  }
+}
